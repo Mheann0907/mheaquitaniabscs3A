@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+#header {
+            background-color: #4a2c22; /* Brown color for the header */
+            color: #fff; /* White text for the header */
+            padding: 40px;
+            text-align: center;
+
+			
+        }
+        #nav {
+            background-color: #4a2c22; /* Brown color for the navigation bar */
+        }
+        #nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        #nav ul li {
+            display: inline;
+            margin-right: 40px;
+        }
+        #nav ul li a {
+            text-decoration: none;
+            color: #fff; /* White text for navigation links */
+        }
+    </style>
+	
+	<div id="header">
+        <h1> -  JM's Cafe - </h1>
+    </div>
+    <div id="nav">
+        <ul>
+          
+			<li><a href="aboutus2.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <li><a href="feedbackform.html">Feedback form</a></li>
+			<li><a href="ordernow.html">Order Now</a></li>
+        </ul>
+    </div>
+
+
+	<h2 style="font-size:2.5em;"> Choose your fave Coffee!</h2>
+
+<p style="font-size:2.5em">- HOT COFFEE - </p>
+
+<form>
+  <input type="radio" id="espresso" name="fav_language" value="espresso">
+  <label style="font-size:2em"; for="espresso">ESPRESSO</label><br>
+  <input type="radio" id="americano" name="fav_language" value="americano">
+  <label style="font-size:2em"; for="css">AMERICANO</label><br>
+  <input type="radio" id="latte" name="fav_language" value="latte">
+  <label style="font-size:2em"; for="javascript">LATTE</label><br>
+
+</form> 
+
+<p style="font-size:2.5em">- ICED COFFEE - </p>
+
+<form>
+  <input type="radio" id="coffeelatte" name="fav_language" value="coffeelatte">
+  <label style="font-size:2em"; for="espresso">COFFE LATTE</label><br>
+  <input type="radio" id="cappuccino" name="fav_language" value="cappuccino">
+  <label style="font-size:2em"; for="css">CAPPUCCINO</label><br>
+  <input type="radio" id="americano" name="fav_language" value="americano">
+  <label style="font-size:2em"; for="javascript">AMERICANO</label><br><br> <br>
+</form> 
+
+<h1> Your details:</h1>
+
+<form action="/action_page.php" method="get" id="nameform">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname">
+</form>
+
+<p>The button below is outside the form element, but still part of the form.</p>
+
+<button type="submit" form="nameform" value="Submit">Submit</button>
+
